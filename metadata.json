@@ -1,0 +1,6 @@
+{
+  "name": "SmartSync - College Timetable Management System",
+  "description": "A centralized academic timetable management system for colleges to generate, validate, optimize, and publish schedules with conflict detection and change tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,89 @@
+/* SmartSync Academic Design System Tokens */
+:root {
+  /* Brand & Neutral Palette (High-contrast, academic, accessible) */
+  --color-primary: #1e3a8a;          /* Deep Collegiate Navy */
+  --color-primary-hover: #172554;
+  --color-primary-light: #eff6ff;
+  --color-primary-border: #bfdbfe;
+
+  --color-secondary: #334155;        /* Deep Slate */
+  --color-secondary-hover: #1e293b;
+  --color-secondary-light: #f1f5f9;
+
+  --color-accent: #2563eb;           /* Academic Blue Accent */
+  --color-accent-soft: #dbeafe;
+
+  --color-bg-canvas: #f8fafc;        /* Soft crisp academic background */
+  --color-bg-card: rgba(255, 255, 255, 0.85); /* Subtle glass card */
+  --color-bg-surface: #ffffff;
+  --color-bg-elevated: #ffffff;
+
+  /* Typography Colors */
+  --color-text-primary: #0f172a;     /* Slate-900 for WCAG AA readability */
+  --color-text-secondary: #475569;   /* Slate-600 */
+  --color-text-muted: #64748b;       /* Slate-500 */
+  --color-text-light: #94a3b8;
+
+  /* Structural Borders */
+  --color-border-subtle: #e2e8f0;    /* Slate-200 */
+  --color-border-glass: rgba(226, 232, 240, 0.85);
+  --color-border-focus: #3b82f6;
+
+  /* Timetable State Status Colors */
+  --status-normal-bg: #eff6ff;
+  --status-normal-text: #1d4ed8;
+  --status-normal-border: #bfdbfe;
+
+  --status-published-bg: #ecfdf5;
+  --status-published-text: #047857;
+  --status-published-border: #a7f3d0;
+
+  --status-pending-bg: #f5f3ff;
+  --status-pending-text: #6d28d9;
+  --status-pending-border: #ddd6fe;
+
+  --status-changed-bg: #fffbeb;
+  --status-changed-text: #b45309;
+  --status-changed-border: #fde68a;
+
+  --status-conflict-bg: #fef2f2;
+  --status-conflict-text: #b91c1c;
+  --status-conflict-border: #fecaca;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.07), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+  --shadow-modal: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-card: 14px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Glassmorphic card styling with disciplined opacity and optical borders */
+.academic-glass-card {
+  background-color: var(--color-bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-glass);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s ease-in-out;
+}
+
+.academic-glass-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.academic-subtle-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-subtle);
+}

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./styles/design-tokens.css";
+
+body {
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
